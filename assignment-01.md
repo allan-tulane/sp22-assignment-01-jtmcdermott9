@@ -62,7 +62,8 @@ $$
   - 2a. (6 pts) Translate this to Python code -- fill in the `def foo` method in `main.py`  
 
   - 2b. (6 pts) What does this function do, in your own words?  
-
+  
+  This function returns the nth Fibonacci number where n is the input. It does this with a recursive call of n-1 and n-2, with a base case of returning 1 when n <= 1. This works because the formula for the Fibonacci Sequence is the sum of the two previous numbers in the sequence, so adding n-1 and n-2 will yield the nth number.
 .  
 .  
 .  
