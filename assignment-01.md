@@ -2,7 +2,7 @@
 
 # CMPS 2200 Assignment 1
 
-**Name:**_________________________
+**Name:**_JT McDermott________________________
 
 
 In this assignment, you will learn more about asymptotic notation, parallelism, functional languages, and algorithmic cost models. As in the recitation, some of your answer will go here and some will go in `main.py`. You are welcome to edit this `assignment-01.md` file directly, or print and fill in by hand. If you do the latter, please scan to a file `assignment-01.pdf` and push to your github repository. 
@@ -13,33 +13,34 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
 .  
-.  
+.  Yes, it is O(2^n) because the limit of 2^(n+1)/2^n = 2, and 2^n times the constant 2 is equal to 2^(n+1).
 .  
 .  
 . 
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
 .  
-.  
+.  It is not O(2^n) because the limit of their quotient approaches infinity as n approaches infinity.
 .  
 .  
 .  
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
 .  
-.  
-.  
+.  It is not O(log^2 n) because the limit of their quotient is infinity as n approaches infinity.
+.
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
 .  
-.  
+.  It is and element of Omega(log^2 n) because, as we have seen in the previous question, n^1.01 asymptotically dominates log^2 n, or in other words the limit of log^2 n / n^1.01 approaches 0 as n approaches infinity.
 .  
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
 .  
-.  
+.  No, it is not because the limit of their quotient is infinity as n approaches infinity.
 .  
 .  
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
+  Yes, sqrt(x) asymptotically dominates log^3(x); the limit of their quotient equals zero as n approaches infinity.
 .  
 
 
