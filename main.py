@@ -10,11 +10,27 @@ def foo(x):
       return x
     else:
       return foo(x-1) + foo(x-2)
-    print('test' * x)
+    
 
 def longest_run(mylist, key):
     ### TODO
-    pass
+    runCount = 0
+    maxRunCount = 0
+    previous = None
+    
+    for i in mylist:
+      if i == previous == key:
+        runCount += 1
+        if runCount > maxRunCount:
+          maxRunCount = runCount
+      else:
+        runCount = 0
+      previous = i
+
+
+
+    return maxRunCount+1
+
 
 
 class Result:
