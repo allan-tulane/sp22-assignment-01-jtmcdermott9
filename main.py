@@ -48,11 +48,55 @@ class Result:
     
 def longest_run_recursive(mylist, key):
     ### TODO
-    pass
+    return longest_run_recursive(mylist,key).longest_size
+
+
+
+def _longest_run_recursive(mylist, key):
+  
+  if len(mylist) == 1:
+    if mylist[0] == key:
+      x = Result(1, 1, 1, True)
+      return x
+    else:
+      y = Result(0, 0, 0, False)
+      return y
+
+  else:
+    mid = (len(mylist)-1)//2
+    left = mylist(:mid)
+    right = mylist(mid+1:)
+
+    _longest_run_recursive(left, key)
+    _longest_run_recursive(right, key)
+
+    left.left_size = 
+    left.right_size =
+    left.longest_size = max(left.left_size, left.right_size)
+
+    right.left_size =
+    right.right_size =
+    right.longest_size = max(right.left_size, right.right_size)
+
+    
+     
+
+    Result a 
+    
+    a.longest_size = max(left.longest_size, right.longest_size, left.right_size + right.left_size)
+
+    return a
+
+    
+    
+
+
+
+
+      
 
 ## Feel free to add your own tests here.
 def test_longest_run():
     assert longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3
 
 
-foo(3)
