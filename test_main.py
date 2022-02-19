@@ -43,6 +43,9 @@ def to_value(v):
 def test_longest_run_recursive_none():
     assert to_value(longest_run_recursive([2,12,12,8,12,12,12,0,12,1], 999)) == 0
 
+def test_longest_run_recursive_easy():
+  assert to_value(longest_run_recursive([2], 2)) == 1
+
 def test_longest_run_recursive():
 	assert to_value(longest_run_recursive([2,12,12,8,12,12,12,0,12,1], 12)) == 3
 
