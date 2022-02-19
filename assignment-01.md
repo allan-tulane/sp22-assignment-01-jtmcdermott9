@@ -124,7 +124,7 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
   The work of the parallel recursive algorithm is W(n) = O(n log n). The span is O(1) when n = 1 and log_2(n).
 
-.  
+.  test
 .  
 .  
 .  
